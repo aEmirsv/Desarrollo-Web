@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Mi primera pagina web</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Adrian Emir">
+        <meta name="description" content="Desarrollo web-Mac">
+        <meta name="vierport" content=" width=device-width, initial-scale-01.0">
+        <meta name="keywords" content="HTML, mac, Desarrollo">
+    
+        <style>
+            .tabla1{
+                border:1px solid black;
+            }
+
+            .tabla1 td, .tabla1 th{
+                border:1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Mi primer pagina web</h1>   
+        <h2 id="indice">Indice</h2>
+        <ol>
+            <li><a href="#cap1">Capitulo 1</a></li>
+            <li><a href="#cap2">Capitulo 2</a></li>
+            <li><a href="#cap3">Capitulo 3</a></li>
+            <li><a href="#cap4">Capitulo 4</a></li>
+        </ol>
+
+        <br>
+
+        <h2 id="cap1">Capitulo 1</h2>
+
+        <h2>Subtitulo 1</h2>
+
+        <p>Lorem, ipsum dolor <mark>sit amet consectetur adipisicing</mark> elit.
+            <del>Ea numquam ex dolor officiis reprehenderit? Quia aperiam expedita</del>  velit,
+            ipsa iusto tenetur hic laborum, optio deleniti facilis fuga iste iure impedit.
+        </p>
+        <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Necessitatibus perspiciatis autem</small> beatae assumenda consequuntur nostrum,
+            ducimus porro nemo commodi <ins>corregir</ins> dolor et corporis repellendus incidunt voluptatem
+            magni alias culpa modi voluptas ab excepturi illum sunt amet possimus? 
+            Suscipit ratione quasi tempora asperiores perferendis porro quos reiciendis 
+            perspiciatis accusantium illo neque aliquam, obcaecati et, cupiditate ab debitis 
+            odio voluptates dignissimos cum. Consequatur doloribus sed dolores 
+            necessitatibus omnis magni est alias nulla eum, tempora modi quasi perspiciatis, 
+            in iure recusandae itaque. Saepe delectus, odit in fugit ipsam reiciendis 
+            consectetur corporis maxime. Doloremque sequi officiis omnis ullam veniam 
+            eligendi,laboriosam amet praesentium maxime quod!</p>
+
+        
+
+        <a href="https://mac.acatlan.unam.mx/" target="_blank">Matematicas aplicadas y computacion</a>
+        <br>
+        <a href="#indice">Volver al indice</a>
+        
+        <h2 id="cap2">Capitulo 2</h2>
+        <h3>Subtitulo 2</h3>
+
+            <ol>
+                <li>Articulo 1</li>
+                <li>Articulo 2</li>
+                <li>Articulo 3</li>
+            </ol>
+        <br>
+        S<sub>n</sub><sup>2</sup>=(1/n)suma(x-media)<sup>2</sup>
+        <br>
+        <a href="#indice">Volver al indice</a>
+
+
+        <h2 id="cap3">Capitulo 3</h2>   
+        <h4>Subtitulo 4</h4>
+
+        <ul>
+            <li>Articulo 1</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <br>
+        <a href="#indice">Volver al indice</a>
+
+        <h2 id="cap4">Capitulo 4</h2>
+        <h5>Subtitulo 5</h5>
+
+        <table class="tabla1">
+            <thead>
+                <tr>
+                    <th >Campo 1</th>
+                    <th>Campo 2</th>
+                    <th>Campo 3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td> Celda 11</td>
+                    <td>Celda 12</td>
+                    <td>Celda13</td>
+                </tr>
+                <tr>
+                    <td>Celda 21</td>
+                    <td>Celda 22</td>
+                    <td>Celda 23</td>
+                </tr>
+                <tr>
+                    <td>Celda 31</td>
+                    <td>Celda 32</td>
+                    <td>Celda 33</td>
+                </tr>
+                <tr>
+                    <td>Celda 41</td>
+                    <td>Celda 42</td>
+                    <td>Celda 43</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <img src="rick.jpg" alt="imagen rick" width="800" height="400">
+        <br>
+        <a href="#indice">Volver al indice</a>
+
+        <h6>Subtitulo 6</h6>
+
+    </body>
+    
+</html>
