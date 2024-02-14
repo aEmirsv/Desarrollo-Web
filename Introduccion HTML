@@ -11,6 +11,9 @@
         <meta name="keywords" content="HTML, mac, Desarrollo">
     
         <style>
+            body{
+            background-color: teal;
+            }
             .tabla1{
                 border:1px solid black;
             }
