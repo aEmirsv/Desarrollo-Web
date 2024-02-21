@@ -12,15 +12,18 @@
     
         <style>
             body{
-            background-color: teal;
+                background-color: teal;
             }
             .tabla1{
                 border:1px solid black;
+                /*border-collapse: collapse;*/
+                border-spacing: 10px;
             }
 
             .tabla1 td, .tabla1 th{
                 border:1px solid black;
-                border-collapse: collapse;
+                padding: 10px;
+                
             }
         </style>
     </head>
