@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedores</title>
+    <style>
+
+        .contenedor{
+            width: 300px;   /*Para definir ancho*/
+            height: 300px;  /*Para definir altura*/
+            background-color: blue;
+            padding: 10px;
+            border: 3px black solid;
+            margin: 10px;   /*Deja margen con respecto al body*/
+            box-sizing: border-box; /*Para respetar el valor del contenedor*/
+        }
+        .contenedor2{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(235, 184, 91);
+            padding: 10px;
+            margin: 10px;
+            border: 3px black solid;
+        }
+        .contenedor3{ /*Selector de clase: .nombre{}*/
+            width: 80%;
+            height: 500px;
+            background-color: antiquewhite;
+            position: relative;
+        }
+
+        .forma{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(56, 24, 97);
+            
+        }
+            /*Los contenedores son elementos por bloque, cada nuevo contenedor aplica un salto de linea*/
+        .c1, .c2, .c3, .c4, .c5{
+            position: absolute;
+        }
+        .c2{
+            right: 0;
+        }
+        .c3{
+            bottom: 0;
+            left: 0;
+        }
+        .c4{
+            right: 0;
+            bottom: 0;
+        }
+        .c5{
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cum recusandae debitis optio cupiditate. Quisquam ullam eius ducimus delectus aperiam!
+    </div>
+    <div class="contenedor2">
+
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo eaque iusto eum accusantium! Illum placeat laboriosam, id reprehenderit voluptatibus officia eveniet asperiores nulla est? Molestias, officiis incidunt! Earum, accusantium iure!
+
+    </div>
+
+    <div class="contenedor3"> <!--Para crear contenedores anidados: div.contenedor3.>div.c$*3  -->
+        <div class="forma c1"></div>
+        <div class="forma c2"></div>
+        <div class="forma c3"></div>
+        <div class="forma c4"></div>
+        <div class="forma c5"></div>
+
+    </div>
+
+</body>
+</html>
