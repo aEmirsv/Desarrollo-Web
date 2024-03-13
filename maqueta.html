@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta</title>
+    <style>
+        body{
+            background-color: rgb(139, 180, 152);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header, nav, main, footer{
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        header{
+            text-align: center;
+            
+        }
+        nav{   
+            background-color: rgba(22, 29, 44, 0.945);
+        }
+        nav ul{
+            list-style: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 0 10px; /*:margen inf-sup, margen izq-der*/
+        }
+        nav a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+        nav a:hover{
+            color: yellow;
+            font-weight: bold; /*Para dar negritas*/
+        }
+        main{
+            overflow: hidden; /*Oculta lo que sale cuando se hace pequeña la venta oculta lo que esta salido*/
+        }
+        aside{
+            float: left;    /*Se coloca del lado izquierdo (Hasta la version 4 se ocupaba float)*/
+            width: 20%;
+            background-color: darkslategray;
+            padding: 20px;
+            font-size: 20px;
+        }
+        section{
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+            background-color: indigo;
+            font-size: 20px;
+        }
+        footer{
+            clear: both;    /* Remueve los efectos del float, limpia los atributos para que no lo afecte*/
+            text-align: center;
+            background-color: teal;
+        }
+
+        @media (max-width: 700px){
+            aside, section{
+                float: none;
+                width: 100%;
+            }
+        }
+        /*Flex box es por excelencia para el responsive*/
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Titulo Principal</h1>
+    </header>
+    <nav>
+        <!-- ctrl+shift+p  para encapsular( wrape whit abrevation) 
+             ctrl+b para abrir archivos-->
+
+        <ul>
+            <li><a href="">Menu1</a></li>
+            <li><a href="">Menu2</a></li>
+            <li><a href="">Menu3</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <p>Contenido lateral</p>
+        </aside>
+        <section>
+            <p>Contenido principal</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pie de pagina</p>
+    </footer>
+
+</body>
+</html>
