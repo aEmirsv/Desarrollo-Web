@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .contenedor{
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        header, footer{
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            color: white;
+            font-size: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav{
+            background-color: #333;
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul{
+            width: 100%;
+            list-style: none;
+            display: flex; 
+            justify-content: space-evenly;
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover{
+            color: yellow;
+            font-weight: bold;
+        }
+        main{
+            display: flex;
+            width: 100%;
+        }
+        aside{
+            width: 30%;
+            background-color: khaki;
+        }
+        section{
+            width: 70%;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>Encabezado Principal</header>
+
+        <nav>
+            <!-- ul>li*4>a -->
+            <ul>
+                <li><a href="">Opcion 1</a></li>
+                <li><a href="">Opcion 2</a></li>
+                <li><a href="">Opcion 3</a></li>
+                <li><a href="">Opcion 4 </a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <aside>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, reprehenderit? Nam repellendus voluptatem quam placeat.
+            </aside>
+
+            <section>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi reiciendis aut maxime officiis iure voluptatibus!
+            </section>
+        </main>
+
+        <footer>&copy;Derechos reservados Fes Acatlan</footer> <!-- &copy; Para simbolo de derechos reservados -->
+
+    </div>
+</body>
+</html>
