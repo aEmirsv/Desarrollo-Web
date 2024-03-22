@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model DOM</title>
+</head>
+
+  <body>
+    
+    <h1>Formularios</h1>
+    <form action="#" id="formulario">
+      <label for="usuario">usuario</label>
+      <input type="text" name="usuario" id="usuario"> <br>
+      <label for="pass">Password</label>
+      <input type="password" name="pass" id="pass"> <br>
+      <label for="">Genero</label>
+      <input type="radio" name="genero" id="genero-masculino" value="Masculino">Masculino
+      <input type="radio" name="genero" id="genero-femenino" value="Femenino">Femenino
+      <input type="radio" name="genero" id="genero-otro" value="Otro">Otro
+      
+      <label for="">Sugerencias:</label><br>
+      <textarea id="sugerencia" name="sugerencia" cols="30" rows="10"></textarea><br>
+      <input type="submit" value="ENVIAR" >
+    </form>
+    
+    <div id="respuesta"></div>
+    
+    <script>
+      //console.log(document);
+      document.addEventListener('DOMContentLoaded', function(){
+        const formulario = document.getElementById('formulario');
+        //console.log(formulario);
+        const respuesta = document.getElementById('respuesta')
+        //Evento submit 
+        document.addEventListener('submit', function(event){
+          event.preventDefault();       //Evita que el navegador se refresque para que el valor se pueda ver, el submit hace que se refresque la página web
+          const usuario=formulario.usuario.value;
+          console.log(usuario);
+
+          const password=formulario.pass.value;
+          console.log(password);
+
+          const sugerencia=formulario.sugerencia.value;
+
+          const genero= formulario.genero.value;
+          
+          respuesta.innerHTML= `
+          <p>Nombre: ${usuario}</p>
+          <p>Password: ${password}</p>
+          <p>Genero: ${genero}</p>
+          <p>Sugerencia: ${sugerencia}</p>
+          `  //Para mandar informacion a un html alt+96:``
+        })
+      }; //Para saber cual es el evento o escucharlo JAVASCRIPT escucha eventos
+    </script>
+    
+  </body>  
+</html>
